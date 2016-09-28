@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>File Meatadata</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	    body{
+	        background : black;
+	        color : white;
+	        font-size : 16px;
+	    }
+	    input.btn{
+	        display : inline-block;
+	        width : 100%;
+	    }
+	    .col{
+	        padding-left : 0px;
+	    }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="header">
+			API Basejump: File Meatadata Microservice 
+		</h1>
+		<h3>Submit a file to view its filesize.</h3>
+	    <form action="/get-file-size" method="post" enctype="multipart/form-data">
+	        <div class="col col-sm-6">
+	            <input class="btn btn-success" type="file" name="fileUpload">
+	        </div>
+	        <div class="col col-sm-2">
+	            <input class="btn btn-primary" type="submit">
+	        </div>
+            
+        </form>
+		
+	</div>
+	
+</body>
+</html>
